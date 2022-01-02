@@ -14,6 +14,7 @@ public class aplicacao {
 
         List<Funcionario> list = new ArrayList<>();
 
+        /*
         //Populando para testes
         Funcionario funcionario1 = new Funcionario("Eliseu", "008964558789", "48991821983", "Zure Roberto da Silva 210", 6000.0);
         list.add(funcionario1);
@@ -33,11 +34,24 @@ public class aplicacao {
         GerenteGeral funcionario6 = new GerenteGeral("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220",3200.0,1200.0);
         list.add(funcionario6);
 
-        for (Funcionario x : list) {
-            if (x instanceof Funcionario) {
-                System.out.println(x);
-            }
-        }
+        System.out.println(list);*/
 
+        int optMenuPrincipal = 0;
+        do {
+            System.out.println("===================================================");
+            System.out.println("       SISTEMA GERENCIAMENTO DE FUNCIONARIOS       ");
+            System.out.println("===================================================\n");
+            System.out.println("  | 1. Adicionar funcionário");
+            System.out.println("  | 2. Ver detalhes de um funcionário");
+            System.out.println("  | 3. Demitir funcionário");
+            System.out.println("  | 4. Atualizar informações de um funcionário");
+            System.out.println("  | 5. Listar todos os funcionários");
+            System.out.println("  | 6. Listar somente os funcionários trabalhando");
+            System.out.println("  | 7. Listar somente os funcionários demitidos");
+            System.out.println("  | 0. Sair\n");
+            System.out.print("Escolha um opção: ");
+            optMenuPrincipal = sc.nextInt();
+
+        }while (optMenuPrincipal != 0);
     }
 }
