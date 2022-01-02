@@ -32,9 +32,9 @@ public class GerenteGeral extends Funcionario{
     @Override
     public String toString() {
 
-        return "\n____________________________________________\n" +
-                "                GERENTE GERAL                  " +
-                "\n____________________________________________\n" +
+        return "____________________________________________\n" +
+                "                GERENTE GERAL               \n" +
+                "____________________________________________\n" +
                 " * ID            : " + getIdFuncionario() + "\n" +
                 " * NOME          : " + getNome() + "\n" +
                 " * CPF           : " + getCpf() + "\n" +
@@ -45,7 +45,7 @@ public class GerenteGeral extends Funcionario{
                 " * IMPOSTOS      : - " + String.format("%.2f", getImpostos()) + "%" + "\n" +
                 " * AJUDA DE CUSTO: + " + String.format("%.2f", getAjudaDeCusto()) + "\n" +
                 " * SALARIO       : = " + String.format("%.2f", calcularSalario()) + "\n" +
-                "____________________________________________\n"
+                "____________________________________________"
                 ;
     }
 }

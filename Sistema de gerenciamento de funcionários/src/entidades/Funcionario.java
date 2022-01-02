@@ -1,5 +1,8 @@
 package entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Funcionario extends Pessoa {
 
     private static Integer addIdFuncionario = 0; //Contador para geracao do numero unico do funcionario
@@ -92,9 +95,9 @@ public class Funcionario extends Pessoa {
     @Override
     public String toString() {
 
-        return "\n____________________________________________\n" +
-                "                FUNCIONARIO                     " +
-                "\n____________________________________________\n" +
+        return "____________________________________________\n" +
+                "                FUNCIONARIO                \n" +
+                "____________________________________________\n" +
                 " * ID           : " + idFuncionario + "\n" +
                 " * NOME         : " + getNome() + "\n" +
                 " * CPF          : " + getCpf() + "\n" +
@@ -103,7 +106,7 @@ public class Funcionario extends Pessoa {
                 " * SALARIO BASE : + " + String.format("%.2f", salarioBase) + "\n" +
                 " * IMPOSTOS     : - " + String.format("%.2f", impostos) + "%" + "\n" +
                 " * SALARIO      : = " + String.format("%.2f", calcularSalario()) + "\n" +
-                "____________________________________________\n"
+                "____________________________________________"
                 ;
     }
 }

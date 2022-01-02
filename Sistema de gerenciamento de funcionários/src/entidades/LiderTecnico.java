@@ -20,9 +20,9 @@ public class LiderTecnico extends Funcionario {
     @Override
     public String toString() {
 
-        return "\n____________________________________________\n" +
-                "                LIDER TECNICO                   " +
-                "\n____________________________________________\n" +
+        return "____________________________________________\n" +
+                "                LIDER TECNICO               \n" +
+                "____________________________________________\n" +
                 " * ID           : " + getIdFuncionario() + "\n" +
                 " * NOME         : " + getNome() + "\n" +
                 " * CPF          : " + getCpf() + "\n" +
@@ -32,7 +32,7 @@ public class LiderTecnico extends Funcionario {
                 " * SALARIO BASE : + " + String.format("%.2f", getSalarioBase()) + "\n" +
                 " * IMPOSTOS     : - " + String.format("%.2f", getImpostos()) + "%" + "\n" +
                 " * SALARIO      : = " + String.format("%.2f", calcularSalario()) + "\n" +
-                "____________________________________________\n"
+                "____________________________________________"
                 ;
     }
 }

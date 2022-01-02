@@ -9,9 +9,9 @@ public class Colaborador extends Funcionario {
     @Override
     public String toString() {
 
-        return  "\n____________________________________________\n" +
-                "                COLABORADOR               " +
-                "\n____________________________________________\n" +
+        return  "____________________________________________\n" +
+                "                COLABORADOR                 \n" +
+                "____________________________________________\n" +
                 " * ID           : " + getIdFuncionario() + "\n" +
                 " * NOME         : " + getNome() + "\n" +
                 " * CPF          : " + getCpf() + "\n" +
@@ -20,7 +20,7 @@ public class Colaborador extends Funcionario {
                 " * SALARIO BASE : + " + String.format("%.2f", getSalarioBase()) + "\n" +
                 " * IMPOSTOS     : - " + String.format("%.2f", getImpostos()) + "%" + "\n" +
                 " * SALARIO      : = " + String.format("%.2f", calcularSalario()) + "\n" +
-                "____________________________________________\n"
+                "____________________________________________"
                 ;
     }
 }
