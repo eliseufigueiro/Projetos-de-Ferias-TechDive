@@ -6,6 +6,7 @@ public class Funcionario extends Pessoa {
     private Integer idFuncionario; //Recebe o numero do contador a cada instancia do objeto
     private Double salarioBase;
     private Double impostos;
+    private Integer fgAtivo;
 
     //Construtor
     public Funcionario(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {
@@ -14,6 +15,7 @@ public class Funcionario extends Pessoa {
         idFuncionario();
         this.salarioBase = salarioBase;
         calculoImpostos();
+        funcionarioTrabalhando();
     }
 
     //Getters e Setters
@@ -35,6 +37,14 @@ public class Funcionario extends Pessoa {
     public Double getImpostos() {
 
         return impostos;
+    }
+
+    public Integer getFgAtivo() {
+        return fgAtivo;
+    }
+
+    public void setFgAtivo(Integer fgAtivo) {
+        this.fgAtivo = fgAtivo;
     }
 
     //Metodos auxiliares:
@@ -69,10 +79,20 @@ public class Funcionario extends Pessoa {
         return getSalarioBase() - ((getImpostos() / 100) * getSalarioBase());
     }
 
+    public void funcionarioTrabalhando() {
+
+        setFgAtivo(1);
+    }
+
+    public void funcionarioDemitido() {
+
+        setFgAtivo(0);
+    }
+
     @Override
     public String toString() {
 
-        return  "\n____________________________________________\n" +
+        return "\n____________________________________________\n" +
                 "                FUNCIONARIO                     " +
                 "\n____________________________________________\n" +
                 " * ID           : " + idFuncionario + "\n" +
@@ -80,9 +100,9 @@ public class Funcionario extends Pessoa {
                 " * CPF          : " + getCpf() + "\n" +
                 " * TELEFONE     : " + getNumeroTelefone() + "\n" +
                 " * LOGRADOURO   : " + getLogradouro() + "\n" +
-                " * SALARIO BASE : " + String.format("%.2f", salarioBase) + "\n" +
-                " * IMPOSTOS     : " + String.format("%.2f", impostos) + "\n" +
-                " * SALARIO      : " + String.format("%.2f", calcularSalario()) + "\n" +
+                " * SALARIO BASE : + " + String.format("%.2f", salarioBase) + "\n" +
+                " * IMPOSTOS     : - " + String.format("%.2f", impostos) + "%" + "\n" +
+                " * SALARIO      : = " + String.format("%.2f", calcularSalario()) + "\n" +
                 "____________________________________________\n"
                 ;
     }

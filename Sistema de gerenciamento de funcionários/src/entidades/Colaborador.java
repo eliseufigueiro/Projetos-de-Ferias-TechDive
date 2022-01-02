@@ -17,9 +17,9 @@ public class Colaborador extends Funcionario {
                 " * CPF          : " + getCpf() + "\n" +
                 " * TELEFONE     : " + getNumeroTelefone() + "\n" +
                 " * LOGRADOURO   : " + getLogradouro() + "\n" +
-                " * SALARIO BASE : " + String.format("%.2f", getSalarioBase()) + "\n" +
-                " * IMPOSTOS     : " + String.format("%.2f", getImpostos()) + "\n" +
-                " * SALARIO      : " + String.format("%.2f", calcularSalario()) + "\n" +
+                " * SALARIO BASE : + " + String.format("%.2f", getSalarioBase()) + "\n" +
+                " * IMPOSTOS     : - " + String.format("%.2f", getImpostos()) + "%" + "\n" +
+                " * SALARIO      : = " + String.format("%.2f", calcularSalario()) + "\n" +
                 "____________________________________________\n"
                 ;
     }
