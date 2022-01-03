@@ -79,6 +79,8 @@ public class Aplicacao {
                     System.in.read();
                     break;
                 case 4:
+                    AtualizarInformacoesFuncionario aF = new AtualizarInformacoesFuncionario();
+                    aF.AtualizarFuncionario();
                     System.out.print("\nPressione Enter para continuar!");
                     System.in.read();
                     break;
