@@ -1,9 +1,7 @@
 package aplicacao;
 
 import entidades.*;
-import servicos.DemitirFuncionario;
-import servicos.DetalhesFuncionario;
-import servicos.ListarTodosFuncionario;
+import servicos.*;
 
 import java.io.IOException;
 import java.util.*;
@@ -30,6 +28,7 @@ public class Aplicacao {
         list.add(funcionario5);
 
         GerenteGeral funcionario6 = new GerenteGeral("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0, 1200.0);
+        list.add(funcionario6);
 
     } //Populando para testes
 
@@ -62,7 +61,10 @@ public class Aplicacao {
 
             switch (opcao) {
                 case 1:
-
+                    AdicionarFuncionario adF = new AdicionarFuncionario();
+                    adF.addFuncionario();
+                    System.out.print("\nPressione Enter para continuar!");
+                    System.in.read();
                     break;
                 case 2:
                     DetalhesFuncionario dtF = new DetalhesFuncionario();
@@ -77,7 +79,8 @@ public class Aplicacao {
                     System.in.read();
                     break;
                 case 4:
-
+                    System.out.print("\nPressione Enter para continuar!");
+                    System.in.read();
                     break;
                 case 5:
                     ListarTodosFuncionario lF = new ListarTodosFuncionario();
@@ -86,10 +89,16 @@ public class Aplicacao {
                     System.in.read();
                     break;
                 case 6:
-
+                    ListarFuncionarioTrabalhando fT = new ListarFuncionarioTrabalhando();
+                    fT.listarFuncionarioTrabalhando();
+                    System.out.print("\nPressione Enter para continuar!");
+                    System.in.read();
                     break;
                 case 7:
-
+                    ListarFuncionarioDemitidos fD = new ListarFuncionarioDemitidos();
+                    fD.listarFuncionarioDemitidos();
+                    System.out.print("\nPressione Enter para continuar!");
+                    System.in.read();
                     break;
                 case 0:
                     System.out.println("\nFinalizando Sistema!");
@@ -98,7 +107,6 @@ public class Aplicacao {
                     System.out.println("\nOpção inválida, Pressione Enter para continuar!");
                     System.in.read();
             }
-
         } while (opcao != 0);
     }
 }

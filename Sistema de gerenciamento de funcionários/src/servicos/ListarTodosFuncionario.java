@@ -20,8 +20,7 @@ public class ListarTodosFuncionario {
                     ", LOGRADOURO: " + funcionario.getLogradouro() +
                     ", SALARIO BASE: " + String.format("%.2f", funcionario.getSalarioBase()) +
                     ", IMPOSTOS: " + String.format("%.2f", funcionario.getImpostos()));
+            System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------");
         }
-
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------------------------");
     }
 }

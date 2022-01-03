@@ -23,7 +23,7 @@ public class DemitirFuncionario {
                 if (id == funcionario.getIdFuncionario()) {
                     funcionario.setFgAtivo(0);
                     System.out.println(funcionario);
-                    System.out.println("\nFuncionário demitido com sucesso: ");
+                    System.out.println("Funcionário demitido com sucesso: ");
                 }
             }
         } else {
