@@ -3,6 +3,7 @@ package entidades;
 public class Colaborador extends Funcionario {
 
     public Colaborador() {
+        super();
     }
 
     public Colaborador(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {

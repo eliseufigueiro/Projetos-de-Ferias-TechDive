@@ -5,6 +5,7 @@ public class LiderTecnico extends Funcionario {
     private Integer metaVendasUnidades;
 
     public LiderTecnico() {
+        super();
     }
 
     public LiderTecnico(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase, Integer metaVendasUnidades) {

@@ -6,6 +6,7 @@ public class GerenteGeral extends Funcionario {
     private Double ajudaDeCusto;
 
     public GerenteGeral() {
+        super();
     }
 
     public GerenteGeral(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase, Double ajudaDeCusto) {

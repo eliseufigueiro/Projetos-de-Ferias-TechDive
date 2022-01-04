@@ -10,6 +10,7 @@ public class Funcionario extends Pessoa {
 
     //Construtor
     public Funcionario() {
+        super();
     }
 
     public Funcionario(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {
