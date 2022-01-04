@@ -7,11 +7,9 @@ public class ListarFuncionarioDemitidos {
 
     public void listarFuncionarioDemitidos() {
 
-        Aplicacao app = null;
-
         System.out.println("\n5. Listar todos os funcionários demitidos");
 
-        for (Funcionario funcionario : app.list) {
+        for (Funcionario funcionario : Aplicacao.list) {
 
             if (funcionario.getFgAtivo() == 0) {
 

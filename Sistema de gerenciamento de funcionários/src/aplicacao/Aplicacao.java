@@ -18,16 +18,16 @@ public class Aplicacao {
         Funcionario funcionario2 = new Colaborador("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
         list.add(funcionario2);
 
-        Colaborador funcionario3 = new Colaborador("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
+        Funcionario funcionario3 = new Colaborador("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
         list.add(funcionario3);
 
-        LiderTecnico funcionario4 = new LiderTecnico("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0, 12000);
+        Funcionario funcionario4 = new LiderTecnico("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0, 12000);
         list.add(funcionario4);
 
-        GerenteDeDepartamento funcionario5 = new GerenteDeDepartamento("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
+        Funcionario funcionario5 = new GerenteDeDepartamento("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
         list.add(funcionario5);
 
-        GerenteGeral funcionario6 = new GerenteGeral("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0, 1200.0);
+        Funcionario funcionario6 = new GerenteGeral("Figueiro", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0, 1200.0);
         list.add(funcionario6);
 
     } //Populando para testes
