@@ -2,6 +2,9 @@ package entidades;
 
 public class Colaborador extends Funcionario {
 
+    public Colaborador() {
+    }
+
     public Colaborador(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {
         super(nome, cpf, numeroTelefone, logradouro, salarioBase);
     }
@@ -9,7 +12,7 @@ public class Colaborador extends Funcionario {
     @Override
     public String toString() {
 
-        return  "____________________________________________\n" +
+        return "____________________________________________\n" +
                 "                COLABORADOR                 \n" +
                 "____________________________________________\n" +
                 " * ID           : " + getIdFuncionario() + "\n" +

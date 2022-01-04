@@ -12,10 +12,10 @@ public class Aplicacao {
     static Scanner sc = new Scanner(System.in);
 
     private void debug() {
-        Funcionario funcionario1 = new Funcionario("Eliseu", "008964558789", "48991821983", "Zure Roberto da Silva 210", 6000.0);
+        Funcionario funcionario1 = new GerenteDeDepartamento("Eliseu", "008964558789", "48991821983", "Zure Roberto da Silva 210", 6000.0);
         list.add(funcionario1);
 
-        Funcionario funcionario2 = new Funcionario("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
+        Funcionario funcionario2 = new Colaborador("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);
         list.add(funcionario2);
 
         Colaborador funcionario3 = new Colaborador("Selbach", "008964558001", "48991821500", "Roberto da Silva 220", 3200.0);

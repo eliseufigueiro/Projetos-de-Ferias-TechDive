@@ -4,6 +4,9 @@ public class GerenteDeDepartamento extends Funcionario {
 
     private final Double gratificacao = 5.0;//5% de gratificacao no salario
 
+    public GerenteDeDepartamento() {
+    }
+
     public GerenteDeDepartamento(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {
         super(nome, cpf, numeroTelefone, logradouro, salarioBase);
     }

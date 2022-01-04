@@ -1,9 +1,12 @@
 package entidades;
 
-public class GerenteGeral extends Funcionario{
+public class GerenteGeral extends Funcionario {
 
     private final Double gratificacao = 10.0;//10% de gratificacao no salario
     private Double ajudaDeCusto;
+
+    public GerenteGeral() {
+    }
 
     public GerenteGeral(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase, Double ajudaDeCusto) {
         super(nome, cpf, numeroTelefone, logradouro, salarioBase);

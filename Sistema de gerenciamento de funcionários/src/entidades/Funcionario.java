@@ -1,8 +1,5 @@
 package entidades;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Funcionario extends Pessoa {
 
     private static Integer addIdFuncionario = 0; //Contador para geracao do numero unico do funcionario
@@ -12,6 +9,9 @@ public class Funcionario extends Pessoa {
     private Integer fgAtivo;
 
     //Construtor
+    public Funcionario() {
+    }
+
     public Funcionario(String nome, String cpf, String numeroTelefone, String logradouro, Double salarioBase) {
 
         super(nome, cpf, numeroTelefone, logradouro);

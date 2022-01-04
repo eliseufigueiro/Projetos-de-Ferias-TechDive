@@ -8,6 +8,9 @@ public class Pessoa {
     private String logradouro;
 
     //Construtor
+    public Pessoa() {
+    }
+
     public Pessoa(String nome, String cpf, String numeroTelefone, String logradouro) {
 
         this.nome = nome;
