@@ -52,7 +52,7 @@ public class Aplicacao {
 
         Locale.setDefault(Locale.US);
         Aplicacao aplicacao = new Aplicacao();
-        aplicacao.debug();
+        //aplicacao.debug();
 
         int opcao = 0;
         do {

@@ -24,20 +24,20 @@ public class AtualizarInformacoesFuncionario {
                 if (id == f.getIdFuncionario()) {
 
                     System.out.print("Atualizar Nome: ");
-                    sc.nextLine();
                     String nome = sc.nextLine();
+                    nome = sc.nextLine();
                     f.setNome(nome);
 
                     System.out.print("Corrigir CPF: ");
-                    String cpf = sc.next();
+                    String cpf = sc.nextLine();
                     f.setCpf(cpf);
 
                     System.out.print("Atualizar Telefone: ");
-                    String fone = sc.next();
+                    String fone = sc.nextLine();
                     f.setNumeroTelefone(fone);
 
                     System.out.print("Atualizar Endereço: ");
-                    String endereco = sc.next();
+                    String endereco = sc.nextLine();
                     f.setLogradouro(endereco);
 
                     System.out.print("Atualizar Salário Base: ");
